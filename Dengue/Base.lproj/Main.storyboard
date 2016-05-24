@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,33 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXe-fi-WUe">
-                                <rect key="frame" x="33" y="10" width="79" height="30"/>
-                                <state key="normal" title="Permissões"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXe-fi-WUe">
+                                <rect key="frame" x="217" y="185" width="167" height="40"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59607843140000005" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="HFE-gF-Fnt"/>
+                                    <constraint firstAttribute="height" constant="40" id="mIK-no-Jo8"/>
+                                </constraints>
+                                <state key="normal" title="Permissões">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="iniciarAutorizacao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G5o-e8-eio"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-Cd-nlD">
-                                <rect key="frame" x="41" y="57" width="62" height="30"/>
-                                <state key="normal" title="Pesquisa"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-Cd-nlD">
+                                <rect key="frame" x="221" y="261" width="158" height="40"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59607843140000005" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EJ0-NF-QZV"/>
+                                    <constraint firstAttribute="width" constant="158" id="tIA-fb-xgs"/>
+                                </constraints>
+                                <state key="normal" title="Pesquisa">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="iniciarPesquisa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h09-As-yjA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-a4-Hih">
-                                <rect key="frame" x="20" y="113" width="104" height="30"/>
-                                <state key="normal" title="Testando a voz"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-a4-Hih">
+                                <rect key="frame" x="223" y="338" width="154" height="40"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59607843140000005" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="WA7-Vs-O5x"/>
+                                    <constraint firstAttribute="height" constant="40" id="eoF-zX-fIj"/>
+                                </constraints>
+                                <state key="normal" title="Testando a voz">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="microphoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbg-Ap-8BY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tXe-fi-WUe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5li-RY-CMe"/>
+                            <constraint firstItem="cWX-a4-Hih" firstAttribute="top" secondItem="ZWI-Cd-nlD" secondAttribute="bottom" constant="37" id="JNl-2d-2Sj"/>
+                            <constraint firstItem="ZWI-Cd-nlD" firstAttribute="top" secondItem="tXe-fi-WUe" secondAttribute="bottom" constant="36" id="NDP-Ea-YiM"/>
+                            <constraint firstItem="tXe-fi-WUe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="WXz-8x-TzY"/>
+                            <constraint firstItem="ZWI-Cd-nlD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yhz-1M-TWU"/>
+                            <constraint firstItem="cWX-a4-Hih" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xBC-M3-b4A"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1008" y="598"/>
         </scene>
     </scenes>
 </document>

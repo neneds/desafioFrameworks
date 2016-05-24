@@ -11,7 +11,7 @@ import ResearchKit
 public var FormularioDeAutorizacao: ORKConsentDocument {
     
     let FormularioDeAutorizacao = ORKConsentDocument()
-    FormularioDeAutorizacao.title = "Exemplo de Autorização"
+    FormularioDeAutorizacao.title = "Formulário de Autorizaçāo para estudo sobre depressāo"
     
     let tiposDeSessoesDeAutorizacao: [ORKConsentSectionType] = [
         .Overview,
@@ -28,8 +28,8 @@ public var FormularioDeAutorizacao: ORKConsentDocument {
         tipoDeSessao in
         
         let sessaoDeAutorizacao = ORKConsentSection(type: tipoDeSessao)
-        sessaoDeAutorizacao.summary = "Se você deseja completar esse estudo..."
-        sessaoDeAutorizacao.content = "Neste estudo voce vai responder algumas perguntas para nos ajudar no tratamento da doença."
+        sessaoDeAutorizacao.summary = "Se você deseja participar do estudo, leia com atençāo"
+        sessaoDeAutorizacao.content = "Esse questionário de maneira alguma serve para definir ou substituir um diagnóstico feito por um profissional. Em caso de dúvidas sobre sua avaliação mental, por favor, consulte imediatamente um profissional da área de saúde mental – psiquiatras, psicólogos. Somente esses profissionais poderão diagnosticar e avaliar o melhor tratamento para seus transtornos, distúrbios, disfunções."
         return sessaoDeAutorizacao
     }
     
