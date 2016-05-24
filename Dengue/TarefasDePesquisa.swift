@@ -52,7 +52,7 @@ public var TarefasDePesquisa: ORKOrderedTask {
             ORKTextChoice(text: "Um Pouco", value: 2),
             ORKTextChoice(text: "Moderadamente", value: 3),
             ORKTextChoice(text: "Bastante", value: 4),
-            ORKTextChoice(text: "Bastante", value: 5)
+            ORKTextChoice(text: "O Tempo todo", value: 5)
         ]
         let formatoDerResposta: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: opcoes)
         let perguntaProblemaDoUsuario = ORKQuestionStep(identifier: "pergunta"+"\(index)", title: question, answer: formatoDerResposta)
