@@ -17,31 +17,23 @@
 		55B313431CEDEB90003A64B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B3133A1CEDEB90003A64B3 /* ViewController.swift */; };
 		55B3134B1CEDEBD7003A64B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B313471CEDEBD7003A64B3 /* LaunchScreen.storyboard */; };
 		55B3134C1CEDEBD7003A64B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B313491CEDEBD7003A64B3 /* Main.storyboard */; };
-		AF2196391CF4E1BA0013F89F /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2196361CF4E1AC0013F89F /* ResearchKit.framework */; };
-		AF21963A1CF4E1BA0013F89F /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF2196361CF4E1AC0013F89F /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B201E94B1CF4F1C80044C495 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201E9481CF4F1890044C495 /* ResearchKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AF2196351CF4E1AC0013F89F /* PBXContainerItemProxy */ = {
+		B201E9471CF4F1890044C495 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AF21962F1CF4E1AC0013F89F /* ResearchKit.xcodeproj */;
+			containerPortal = B201E9411CF4F1890044C495 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		AF2196371CF4E1AC0013F89F /* PBXContainerItemProxy */ = {
+		B201E9491CF4F1890044C495 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AF21962F1CF4E1AC0013F89F /* ResearchKit.xcodeproj */;
+			containerPortal = B201E9411CF4F1890044C495 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
-		};
-		AF21963B1CF4E1BA0013F89F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF21962F1CF4E1AC0013F89F /* ResearchKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B183A4731A8535D100C76870;
-			remoteInfo = ResearchKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AF21963A1CF4E1BA0013F89F /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +62,7 @@
 		55B313481CEDEBD7003A64B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dengue/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		55B3134A1CEDEBD7003A64B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dengue/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		55D8C0761CE2223500C23AC6 /* Dengue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dengue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF21962F1CF4E1AC0013F89F /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		B201E9411CF4F1890044C495 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "Dengue/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2196391CF4E1BA0013F89F /* ResearchKit.framework in Frameworks */,
+				B201E94B1CF4F1C80044C495 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +98,7 @@
 		55D8C06D1CE2223500C23AC6 = {
 			isa = PBXGroup;
 			children = (
-				AF21962F1CF4E1AC0013F89F /* ResearchKit.xcodeproj */,
+				B201E9411CF4F1890044C495 /* ResearchKit.xcodeproj */,
 				55D8C0781CE2223500C23AC6 /* Dengue */,
 				55D8C0771CE2223500C23AC6 /* Products */,
 			);
@@ -137,11 +128,11 @@
 			path = Camelot;
 			sourceTree = "<group>";
 		};
-		AF2196301CF4E1AC0013F89F /* Products */ = {
+		B201E9421CF4F1890044C495 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF2196361CF4E1AC0013F89F /* ResearchKit.framework */,
-				AF2196381CF4E1AC0013F89F /* ResearchKitTests.xctest */,
+				B201E9481CF4F1890044C495 /* ResearchKit.framework */,
+				B201E94A1CF4F1890044C495 /* ResearchKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +152,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				AF21963C1CF4E1BA0013F89F /* PBXTargetDependency */,
 			);
 			name = Dengue;
 			productName = Camelot;
@@ -196,8 +186,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AF2196301CF4E1AC0013F89F /* Products */;
-					ProjectRef = AF21962F1CF4E1AC0013F89F /* ResearchKit.xcodeproj */;
+					ProductGroup = B201E9421CF4F1890044C495 /* Products */;
+					ProjectRef = B201E9411CF4F1890044C495 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -208,18 +198,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AF2196361CF4E1AC0013F89F /* ResearchKit.framework */ = {
+		B201E9481CF4F1890044C495 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = AF2196351CF4E1AC0013F89F /* PBXContainerItemProxy */;
+			remoteRef = B201E9471CF4F1890044C495 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AF2196381CF4E1AC0013F89F /* ResearchKitTests.xctest */ = {
+		B201E94A1CF4F1890044C495 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = AF2196371CF4E1AC0013F89F /* PBXContainerItemProxy */;
+			remoteRef = B201E9491CF4F1890044C495 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -253,14 +243,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AF21963C1CF4E1BA0013F89F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ResearchKit;
-			targetProxy = AF21963B1CF4E1BA0013F89F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55B313471CEDEBD7003A64B3 /* LaunchScreen.storyboard */ = {
