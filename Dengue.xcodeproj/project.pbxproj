@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CBE09E11CF62C390093DAD4 /* solemn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CBE09E01CF62C390093DAD4 /* solemn.mp3 */; };
 		55B3133B1CEDEB90003A64B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B313321CEDEB90003A64B3 /* AppDelegate.swift */; };
 		55B3133C1CEDEB90003A64B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B313331CEDEB90003A64B3 /* Assets.xcassets */; };
 		55B3133E1CEDEB90003A64B3 /* FormularioDeAutorizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B313351CEDEB90003A64B3 /* FormularioDeAutorizacao.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3CBE09E01CF62C390093DAD4 /* solemn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = solemn.mp3; path = ../../../../../../../var/folders/tj/g63rymp94h5_czk49pbjkx580000gn/T/com.apple.iChat/Messages/Transfers/solemn.mp3; sourceTree = "<group>"; };
 		55B313321CEDEB90003A64B3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Dengue/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		55B313331CEDEB90003A64B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Dengue/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		55B313351CEDEB90003A64B3 /* FormularioDeAutorizacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormularioDeAutorizacao.swift; path = Dengue/FormularioDeAutorizacao.swift; sourceTree = SOURCE_ROOT; };
@@ -122,11 +124,11 @@
 				55B3133A1CEDEB90003A64B3 /* ViewController.swift */,
 				B201E9501CF61DC10044C495 /* ResultadoViewController.swift */,
 				55B313321CEDEB90003A64B3 /* AppDelegate.swift */,
-				3C69B3BB1CF615D500A99D6C /* solemn.mp3 */,
 				55B313331CEDEB90003A64B3 /* Assets.xcassets */,
 				55B313361CEDEB90003A64B3 /* Info.plist */,
 				55B313471CEDEBD7003A64B3 /* LaunchScreen.storyboard */,
 				55B313491CEDEBD7003A64B3 /* Main.storyboard */,
+				3CBE09E01CF62C390093DAD4 /* solemn.mp3 */,
 			);
 			name = Dengue;
 			path = Camelot;
@@ -223,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBE09E11CF62C390093DAD4 /* solemn.mp3 in Resources */,
 				55B3133F1CEDEB90003A64B3 /* Info.plist in Resources */,
 				55B3134C1CEDEBD7003A64B3 /* Main.storyboard in Resources */,
 				55B3134B1CEDEBD7003A64B3 /* LaunchScreen.storyboard in Resources */,
