@@ -70,7 +70,6 @@ public var TarefasDePesquisa: ORKOrderedTask {
     
     
     
-    
 //    ///
 //    let colorQuestionStepTitle = "What is your favorite color?"
 //    let colorTuples = [

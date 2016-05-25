@@ -8,10 +8,12 @@
 
 import UIKit
 import ResearchKit
+import AVFoundation
 
 
 class ViewController: UIViewController {
 
+    var plim: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,11 +65,28 @@ extension ViewController : ORKTaskViewControllerDelegate {
     
     func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason:ORKTaskViewControllerFinishReason, error: NSError?) {
         
-        print()
-        
         //Handle results with taskViewController.result
         taskViewController.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    func taskViewController(taskViewController: ORKTaskViewController, shouldPresentStep step: ORKStep) -> Bool {
+        
+        let path = NSBundle.mainBundle().pathForResource("solemn.mp3", ofType:nil)!
+        let url = NSURL(fileURLWithPath: path)
+        
+        do {
+            let sound = try AVAudioPlayer(contentsOfURL: url)
+            plim = sound
+            sound.play()
+        } catch {
+            // couldn't load file :(
+        }
+        
+        
+        return true
+    }
+    
+    
     
 }
 
