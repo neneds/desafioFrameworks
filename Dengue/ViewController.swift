@@ -21,17 +21,19 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func microphoneTapped(sender : AnyObject) {
-        let taskViewController = ORKTaskViewController(task: MicrophoneTask, taskRunUUID: nil)
-        taskViewController.delegate = self
-        taskViewController.outputDirectory = NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] , isDirectory: true)
-        presentViewController(taskViewController, animated: true, completion: nil)
-    }
+//    @IBAction func microphoneTapped(sender : AnyObject) {
+//        let taskViewController = ORKTaskViewController(task: MicrophoneTask, taskRunUUID: nil)
+//        taskViewController.delegate = self
+//        taskViewController.outputDirectory = NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] , isDirectory: true)
+//        presentViewController(taskViewController, animated: true, completion: nil)
+//    }
     
     @IBAction func iniciarPesquisa(sender : AnyObject) {
+        
         let taskViewController = ORKTaskViewController(task: TarefasDePesquisa, taskRunUUID: nil)
         taskViewController.delegate = self
         presentViewController(taskViewController, animated: true, completion: nil)
+        
     }
     
     @IBAction func iniciarAutorizacao(sender : AnyObject) {
@@ -39,6 +41,22 @@ class ViewController: UIViewController {
         taskViewController.delegate = self
         presentViewController(taskViewController, animated: true, completion: nil)
     }
+    
+    
+    func taskViewControllerSupportsSaveAndRestore(taskViewController: ORKTaskViewController) -> Bool {
+        print(#function)
+        return true
+    }
+    
+    func taskViewController(taskViewController: ORKTaskViewController, didChangeResult result: ORKTaskResult) {
+        print(#function)
+    }
+    
+    func taskViewController(taskViewController: ORKTaskViewController, recorder: ORKRecorder, didFailWithError error: NSError) {
+        print(#function)
+
+    }
+    
     
 }
 

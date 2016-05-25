@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -45,29 +45,13 @@
                                     <action selector="iniciarPesquisa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h09-As-yjA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-a4-Hih">
-                                <rect key="frame" x="223" y="338" width="154" height="40"/>
-                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59607843140000005" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="154" id="WA7-Vs-O5x"/>
-                                    <constraint firstAttribute="height" constant="40" id="eoF-zX-fIj"/>
-                                </constraints>
-                                <state key="normal" title="Testando a voz">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="microphoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbg-Ap-8BY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tXe-fi-WUe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5li-RY-CMe"/>
-                            <constraint firstItem="cWX-a4-Hih" firstAttribute="top" secondItem="ZWI-Cd-nlD" secondAttribute="bottom" constant="37" id="JNl-2d-2Sj"/>
                             <constraint firstItem="ZWI-Cd-nlD" firstAttribute="top" secondItem="tXe-fi-WUe" secondAttribute="bottom" constant="36" id="NDP-Ea-YiM"/>
                             <constraint firstItem="tXe-fi-WUe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="WXz-8x-TzY"/>
                             <constraint firstItem="ZWI-Cd-nlD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yhz-1M-TWU"/>
-                            <constraint firstItem="cWX-a4-Hih" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xBC-M3-b4A"/>
                         </constraints>
                     </view>
                 </viewController>
