@@ -8,14 +8,20 @@
 
 import UIKit
 
+import CoreSpotlight
+import MobileCoreServices
+import ResearchKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+      
+            addToSpotlight()
         return true
     }
 
@@ -41,6 +47,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    func addToSpotlight(){
+        
+        for step in TarefasDePesquisa.steps{
+            if let qStep = step as? ORKQuestionStep{
+                if(qStep.questionType == .SingleChoice){
+                    let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeImage as String)
+                    attributeSet.title = "\(qStep.title!)?"
+                    attributeSet.contentDescription =  "Responda as perguntas e descubra se seu nível de depressão é preocupante."
+                    let item = CSSearchableItem(uniqueIdentifier: "br.depreapp.spotlight.questions.\(qStep.identifier)", domainIdentifier: "br.depreapp", attributeSet: attributeSet)
+                    CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) {
+                        (error) in
+                    }
+                }
+            }
+            
+
+            
+        }
+        
+        let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeImage as String)
+        attributeSet.title = "Teste de Depressão"
+        attributeSet.contentDescription = "Responda as perguntas e descubra se seu nível de depressão é preocupante."
+        let item = CSSearchableItem(uniqueIdentifier: "br.depreapp.spotlight.depressao", domainIdentifier: "br.depreapp", attributeSet: attributeSet)
+        CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) {
+            (error) in
+        }
+    }
 
 }
 

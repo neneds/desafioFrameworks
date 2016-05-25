@@ -87,17 +87,16 @@ extension ViewController : ORKTaskViewControllerDelegate {
     
     func taskViewController(taskViewController: ORKTaskViewController, shouldPresentStep step: ORKStep) -> Bool {
         
-        if let path = NSBundle.mainBundle().pathForResource("solemn.mp3", ofType:nil){
-            let url = NSURL(fileURLWithPath: path)
-            
-            do {
-                let sound = try AVAudioPlayer(contentsOfURL: url)
-                plim = sound
-                sound.play()
-            } catch {
-                // couldn't load file :(
-            }
-        }
+//        let path = NSBundle.mainBundle().pathForResource("solemn.mp3", ofType:nil)!
+//        let url = NSURL(fileURLWithPath: path)
+//        
+//        do {
+//            let sound = try AVAudioPlayer(contentsOfURL: url)
+//            plim = sound
+//            sound.play()
+//        } catch {
+//            // couldn't load file :(
+//        }
         
         return true
     }
