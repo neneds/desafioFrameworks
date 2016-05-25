@@ -17,22 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXe-fi-WUe">
-                                <rect key="frame" x="217" y="185" width="167" height="40"/>
-                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59607843140000005" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="167" id="HFE-gF-Fnt"/>
-                                    <constraint firstAttribute="height" constant="40" id="mIK-no-Jo8"/>
-                                </constraints>
-                                <state key="normal" title="Permissões">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="iniciarAutorizacao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G5o-e8-eio"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-Cd-nlD">
-                                <rect key="frame" x="221" y="261" width="158" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teste de Depressão" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGG-pz-kwI">
+                                <rect key="frame" x="123" y="53" width="354" height="96"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="32"/>
+                                <color key="textColor" red="0.84313725490196079" green="0.8784313725490196" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="49" width="354" height="96"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-Cd-nlD">
+                                <rect key="frame" x="221" y="399" width="158" height="40"/>
                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.59607843140000005" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EJ0-NF-QZV"/>
@@ -41,12 +36,32 @@
                                 <state key="normal" title="Pesquisa">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="125" y="448" width="158" height="40"/>
+                                </variation>
                                 <connections>
                                     <action selector="iniciarPesquisa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h09-As-yjA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXe-fi-WUe">
+                                <rect key="frame" x="164" y="182" width="220" height="192"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.59607843140000005" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="HFE-gF-Fnt"/>
+                                    <constraint firstAttribute="height" constant="40" id="mIK-no-Jo8"/>
+                                </constraints>
+                                <state key="normal" title="Permissões">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="117" y="337" width="167" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="iniciarAutorizacao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G5o-e8-eio"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.28235294117647058" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="tXe-fi-WUe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5li-RY-CMe"/>
                             <constraint firstItem="ZWI-Cd-nlD" firstAttribute="top" secondItem="tXe-fi-WUe" secondAttribute="bottom" constant="36" id="NDP-Ea-YiM"/>
@@ -60,4 +75,5 @@
             <point key="canvasLocation" x="1008" y="598"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.32156862745098042" green="0.0" blue="0.7686274509803922" alpha="1" colorSpace="calibratedRGB"/>
 </document>
