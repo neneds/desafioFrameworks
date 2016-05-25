@@ -7,7 +7,35 @@
 //
 
 import ResearchKit
-
+public class TarefasDePesquisaUtils {
+    static let pesos : [String : [Int]] = ["pergunta0" : [1,2,3,4],
+                                    "pergunta1" : [4,3,2,1],
+                                    "pergunta2" : [1,2,3,4],
+                                    "pergunta3" : [1,2,3,4],
+                                    "pergunta4" : [4,3,2,1],
+                                    "pergunta5" : [4,3,2,1],
+                                    "pergunta6" : [1,2,3,4],
+                                    "pergunta7" : [1,2,3,4],
+                                    "pergunta8" : [1,2,3,4],
+                                    "pergunta9" : [1,2,3,4],
+                                    "pergunta10" : [4,3,2,1],
+                                    "pergunta11" : [4,3,2,1],
+                                    "pergunta12" : [1,2,3,4],
+                                    "pergunta13" : [4,3,2,1],
+                                    "pergunta14" : [1,2,3,4],
+                                    "pergunta15" : [4,3,2,1],
+                                    "pergunta16" : [4,3,2,1],
+                                    "pergunta17" : [4,3,2,1],
+                                    "pergunta18" : [1,2,3,4],
+                                    "pergunta19" : [4,3,2,1]
+    ]
+    class func valorPorPeso(stepIdentifier: String, responseValue: Int) -> Int{
+        if let valoresPeso = pesos[stepIdentifier] {
+            return valoresPeso[responseValue]
+        }
+        return 0
+    }
+}
 public var TarefasDePesquisa: ORKOrderedTask {
     
     var steps = [ORKStep]()
@@ -47,24 +75,45 @@ public var TarefasDePesquisa: ORKOrderedTask {
     func createQuestions(question: String, index : Int)->ORKQuestionStep{
         
         let opcoes = [
-            ORKTextChoice(text: "Nunca", value: 0),
-            ORKTextChoice(text: "Raramente", value: 1),
-            ORKTextChoice(text: "Um Pouco", value: 2),
-            ORKTextChoice(text: "Moderadamente", value: 3),
-            ORKTextChoice(text: "Bastante", value: 4),
-            ORKTextChoice(text: "O Tempo todo", value: 5)
+            ORKTextChoice(text: "Pouco tempo", value: 0),
+            ORKTextChoice(text: "Algum tempo", value: 1),
+            ORKTextChoice(text: "Boa parte do tempo", value: 2),
+            ORKTextChoice(text: "Maioria do tempo", value: 3)
+     
         ]
         let formatoDerResposta: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: opcoes)
         let perguntaProblemaDoUsuario = ORKQuestionStep(identifier: "pergunta"+"\(index)", title: question, answer: formatoDerResposta)
         return perguntaProblemaDoUsuario
     }
     
+//    let perguntas : [String] = ["Sinto-me desanimado(a), deprimido(a) e triste", "A manhã é o momento do dia em que me sinto melhor"]
+    let perguntas : [String] = ["Sinto-me desanimado(a), deprimido(a) e triste",
+                                "A manhã é o momento do dia em que me sinto melhor",
+                                "Tenho crises de choro, ou sinto vontade de chorar",
+                                "Tenho dificuldade em dormir descansado (a) durante a noite",
+                                "Continuo a alimentar-me da mesma forma como me alimentava no passado",
+                                "Ainda sinto prazer com o sexo",
+                                "Apercebi-me de que estou a perder peso",
+                                "Tenho prisão de ventre",
+                                "O meu coração está mais acelerado que o habitual",
+                                "Canso-me sem motivo aparente",
+                                "Sinto-me tão lúcido(a) como anteriormente",
+                                "Tenho tanta facilidade em fazer as coisas como anteriormente",
+                                "Sinto-me agitado(a) e não consigo ficar parado(a)",
+                                "Sinto-me optimista e esperançoso(a) em relação ao futuro",
+                                "Sinto-me mais irritável que o habitual",
+                                "Sinto facilidade em tomar decisões",
+                                "Sinto-me útil e necessário(a)",
+                                "Sinto ter uma vida bastante completa",
+                                "Sinto que os outros ficariam melhor se morresse",
+                                "Continuo a ter prazer nas coisas de que sempre gostei"]
     
-    let perguntas : [String] = ["Eu faço as coisas devagar","Meu futuro parece desesperador","É difícil para mim, concentrar na leitura","O prazer e alegria tem estado fora da minha vida","Tenho dificuldade em tomar decisões","Já perdi o interesse em aspectos da vida, que costumava ser importante para mim", "Eu me sinto triste, desmotivado e infeliz", "Estou agitado e fico irritado", "Eu me sinto cansado","É preciso grande esforço para eu fazer coisas simples", "Sinto que sou uma má pessoa que merece ser punido", "Eu me sinto fracassado", "Eu me sinto sem energia, mais morto do que vivo","Meu sono está perturbado, tenho dormido pouco, insônia, sono excessivo ou sono com muitas interrupções","Perco tempo pensando em suicídio", "Eu me sinto preso ou aprisionado", "Sinto-me deprimido, mesmo quando as coisas boas acontecem para mim","Sem tentar dieta, perdi ou adquiri peso"]
+
     
     for (index,item) in perguntas.enumerate(){
         steps += [createQuestions(item, index: index)]
     }
+    
     
     
     

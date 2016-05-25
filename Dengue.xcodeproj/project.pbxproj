@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C69B3BC1CF615D500A99D6C /* solemn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C69B3BB1CF615D500A99D6C /* solemn.mp3 */; };
 		55B3133B1CEDEB90003A64B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B313321CEDEB90003A64B3 /* AppDelegate.swift */; };
 		55B3133C1CEDEB90003A64B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B313331CEDEB90003A64B3 /* Assets.xcassets */; };
 		55B3133E1CEDEB90003A64B3 /* FormularioDeAutorizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B313351CEDEB90003A64B3 /* FormularioDeAutorizacao.swift */; };
@@ -19,6 +18,7 @@
 		55B3134B1CEDEBD7003A64B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B313471CEDEBD7003A64B3 /* LaunchScreen.storyboard */; };
 		55B3134C1CEDEBD7003A64B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B313491CEDEBD7003A64B3 /* Main.storyboard */; };
 		B201E94B1CF4F1C80044C495 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201E9481CF4F1890044C495 /* ResearchKit.framework */; };
+		B201E9511CF61DC10044C495 /* ResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201E9501CF61DC10044C495 /* ResultadoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3C69B3BB1CF615D500A99D6C /* solemn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = solemn.mp3; path = ../../../../../../../var/folders/tj/g63rymp94h5_czk49pbjkx580000gn/T/com.apple.iChat/Messages/Transfers/solemn.mp3; sourceTree = "<group>"; };
 		55B313321CEDEB90003A64B3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Dengue/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		55B313331CEDEB90003A64B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Dengue/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		55B313351CEDEB90003A64B3 /* FormularioDeAutorizacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormularioDeAutorizacao.swift; path = Dengue/FormularioDeAutorizacao.swift; sourceTree = SOURCE_ROOT; };
@@ -65,6 +64,7 @@
 		55B3134A1CEDEBD7003A64B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dengue/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		55D8C0761CE2223500C23AC6 /* Dengue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dengue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B201E9411CF4F1890044C495 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "Dengue/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		B201E9501CF61DC10044C495 /* ResultadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultadoViewController.swift; path = "Dengue/ResearchKit-master/ResultadoViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +120,7 @@
 				55B3134D1CEDEC2D003A64B3 /* Autorização */,
 				55B3134E1CEDEC41003A64B3 /* Pesquisa */,
 				55B3133A1CEDEB90003A64B3 /* ViewController.swift */,
+				B201E9501CF61DC10044C495 /* ResultadoViewController.swift */,
 				55B313321CEDEB90003A64B3 /* AppDelegate.swift */,
 				3C69B3BB1CF615D500A99D6C /* solemn.mp3 */,
 				55B313331CEDEB90003A64B3 /* Assets.xcassets */,
@@ -222,7 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C69B3BC1CF615D500A99D6C /* solemn.mp3 in Resources */,
 				55B3133F1CEDEB90003A64B3 /* Info.plist in Resources */,
 				55B3134C1CEDEBD7003A64B3 /* Main.storyboard in Resources */,
 				55B3134B1CEDEBD7003A64B3 /* LaunchScreen.storyboard in Resources */,
@@ -239,6 +239,7 @@
 			files = (
 				55B313421CEDEB90003A64B3 /* TarefasDeAutorizacao.swift in Sources */,
 				55B313411CEDEB90003A64B3 /* TarefasDePesquisa.swift in Sources */,
+				B201E9511CF61DC10044C495 /* ResultadoViewController.swift in Sources */,
 				55B313401CEDEB90003A64B3 /* MicrophoneTask.swift in Sources */,
 				55B313431CEDEB90003A64B3 /* ViewController.swift in Sources */,
 				55B3133E1CEDEB90003A64B3 /* FormularioDeAutorizacao.swift in Sources */,

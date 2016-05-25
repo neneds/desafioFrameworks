@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e5n-A7-qoc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="5wv-vK-mxp">
+            <objects>
+                <navigationController id="e5n-A7-qoc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1s2-JR-HAo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kQw-Kd-NV8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fJ-Fq-K2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="598"/>
+        </scene>
+        <!--Depressão-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dengue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Depressão" id="BYZ-38-t0r" customClass="ViewController" customModule="Dengue" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -69,10 +85,67 @@
                             <constraint firstItem="ZWI-Cd-nlD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yhz-1M-TWU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wrH-JN-iRd"/>
+                    <connections>
+                        <segue destination="n3r-07-7bJ" kind="show" identifier="to_resultado" id="9Hu-Or-PQx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1008" y="598"/>
+        </scene>
+        <!--Resultado-->
+        <scene sceneID="12A-Q6-LlJ">
+            <objects>
+                <viewController title="Resultado" id="n3r-07-7bJ" customClass="ResultadoViewController" customModule="Dengue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rBj-op-ogt"/>
+                        <viewControllerLayoutGuide type="bottom" id="mXf-tm-ciG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2wp-GE-ing">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-23-o5S">
+                                <rect key="frame" x="20" y="72" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="50" id="LIG-M1-Sl1"/>
+                                    <constraint firstAttribute="width" priority="250" constant="560" id="w85-te-iJW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F3x-jI-ZKN">
+                                <rect key="frame" x="20" y="142" width="560" height="438"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="250" constant="560" id="CaH-HU-tTm"/>
+                                    <constraint firstAttribute="height" priority="250" constant="438" id="wxg-Mg-rb4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="F3x-jI-ZKN" secondAttribute="trailing" constant="20" id="CIX-97-dwi"/>
+                            <constraint firstItem="IFd-23-o5S" firstAttribute="leading" secondItem="2wp-GE-ing" secondAttribute="leading" constant="20" id="RXc-3M-Fza"/>
+                            <constraint firstItem="IFd-23-o5S" firstAttribute="top" secondItem="rBj-op-ogt" secondAttribute="bottom" constant="8" id="YeH-Ow-X1m"/>
+                            <constraint firstItem="F3x-jI-ZKN" firstAttribute="leading" secondItem="2wp-GE-ing" secondAttribute="leading" constant="20" id="Z6M-q4-tql"/>
+                            <constraint firstAttribute="trailing" secondItem="IFd-23-o5S" secondAttribute="trailing" constant="20" id="cVu-t1-u8E"/>
+                            <constraint firstItem="mXf-tm-ciG" firstAttribute="top" secondItem="F3x-jI-ZKN" secondAttribute="bottom" constant="20" id="xhk-kh-mSj"/>
+                            <constraint firstItem="F3x-jI-ZKN" firstAttribute="top" secondItem="IFd-23-o5S" secondAttribute="bottom" constant="20" id="xzp-Ye-7mF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descricaoResultadoTxt" destination="F3x-jI-ZKN" id="lJc-7W-JAi"/>
+                        <outlet property="lblResultado" destination="IFd-23-o5S" id="qNM-mh-Q0e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALF-Jd-37j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1806" y="598"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.32156862745098042" green="0.0" blue="0.7686274509803922" alpha="1" colorSpace="calibratedRGB"/>
